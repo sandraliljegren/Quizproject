@@ -6,19 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>QUIZ</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
 	<body>
 		<h1>QUIZ</h1>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4">Quiz 1</div>
-				<div class="col-md-4">Quiz 2</div>
-				<div class="col-md-4">Quiz 3</div>
+				<a href="quiz.html">Quiz 1</a>
+				<a href="quiz.html">Quiz 2</a>
+				<a href="quiz.html">Quiz 3</a>
 			</div>
 		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	{% for quiz in quizzes %}
+		<p>{{ quiz.name }}</p>
+	{% endfor %}
 	</body>
 
 </html>
