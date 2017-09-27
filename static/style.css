@@ -1,9 +1,30 @@
 body {
-	background-color: red;
+	background-image: url ("https://pro2-bar-s3-cdn-cf1.myportfolio.com/c0746d50920281f658a1c4a985709df0/c95352c9-d3c9-41bd-a4c9-89d3860632ac_rw_1920.jpg?h=2958888ed2d46fb7e22ef7b94e222527");
 
 }
 h1 {
 	align-content: center;
 	font-family: Helvetica;
 
+}
+p {
+	color: white;
+	font-family: Helvetica;
+}
+.class {
+	color: white;
+	font-family: Helvetica;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
