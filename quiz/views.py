@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-def startpage(request):
+def start(request):
 	return render(request, "start.html")
 
 def quiz(request, quiz_number):
