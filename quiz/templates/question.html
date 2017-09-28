@@ -11,9 +11,9 @@
 <body>
 	<h1>{{ question_number }}. {{ question }}</h1>
 	<form>
-	<input type="radio" name="year" value="2015"> {{ answer1 }}
-	<input type="radio" name="year" value="2015"> {{ answer2 }}
-	<input type="radio" name="year" value="2015"> {{ answer3 }}
+	<input type="radio" name="answer" value="1"> {{ answer1 }}
+	<input type="radio" name="answer" value="2"> {{ answer2 }}
+	<input type="radio" name="answer" value="3"> {{ answer3 }}
 </form>
 <p><a href="{% url 'results_page' quiz_number %}">
 	Nästa
