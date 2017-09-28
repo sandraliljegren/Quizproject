@@ -25,7 +25,11 @@ def start(request):
 	return render(request, "start.html", context)
 
 def quiz(request, quiz_number):
-	return render(request, "quiz.html")
+	context = {
+		"quiz": quizzes[quiz_number - 1],
+		"quiz_number": quiz_number,
+	}
+	return render(request, "quiz.html", context)
 
 def question(request, quiz_number, question_number):
 	context = {

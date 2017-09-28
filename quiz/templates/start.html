@@ -15,14 +15,14 @@
 	<div class="container">
 		{% for quiz in quizzes %}
 			<div class="col-md-4">
-				<a href="{% url ' quiz_page' quiz.quiz_number %}">{{ quiz.name }}</a>
+				<a href="{% url 'quiz_page' quiz.quiz_number %}">{{ quiz.name }}</a>
 			</div>
 		{% endfor %}
 	</div>
 		<br>
 	<p>By the way, if you ever feel like doing something else, I took the liberty of attaching a link to my portfolio page as well.</p>
-	<div id="link-container">
-    <button><a href="http://www.sandraliljegren.com" id="link">Go there now!</a></button>
+	<div class="container">
+    <a class="link-container" href="http://www.sandraliljegren.com" id="link">Go there now!</a>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="/static/js/bootstrap.min.js"></script>
