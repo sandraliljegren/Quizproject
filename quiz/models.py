@@ -7,7 +7,7 @@ class Quiz(models.Model):
 
 class Question(models.Model):
 	question = models.TextField()
-	answer1 = models.Charfield(max_length=100)
+	answer1 = models.CharField(max_length=100)
 	answer2 = models.CharField(max_length=100)
 	answer3 = models.CharField(max_length=100)
 	correct = models.PositiveIntegerField()
