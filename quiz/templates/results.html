@@ -13,7 +13,7 @@
 	{% if correct == total %}
 	<img src="/static/its-a-match-01.png" alt="It's a match!" style="width:304px;height:auto;"><br>
 		<p>I guess you should hire me, because you got {{ correct }} out of {{ total }}.</p>
-	{% elif correct < 3 %}
+	{% elif correct < 2 %}
 	<img src="/static/its-a-match-01not.png" alt="It's not a match!" style="width:304px;height:auto;"><br>
    	 	<p>Hm. You seem weird, because you only got {{ correct }} out of {{ total }} but maybe we could learn to compromise?</p>
     {% else %}
