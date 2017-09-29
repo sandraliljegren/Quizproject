@@ -9,11 +9,12 @@
 	<link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+	<img src="/static/tinder-1.svg" alt="Tinder" style="width:304px;height:auto;">
 	<img src="/static/its-a-match-01.png" alt="It's a match!" style="width:304px;height:auto;">
-	<h1>Yay, you won!</h1>
-	<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
+	<br>
+	<p>Vi måste vara perfekta för varandra, för du fick {{ correct }} av {{ total }}.</p><br><br>
 <p><a href="{% url 'start_page' %}">
-	Till startsidan
+	Gör om det!
 </a></p>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="/static/js/bootstrap.min.js"></script>
