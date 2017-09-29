@@ -10,13 +10,14 @@
 </head>
 <body>
 	<img src="/static/tinder-1.svg" alt="Tinder" style="width:304px;height:auto;">
-	<img src="/static/its-a-match-01.png" alt="It's a match!" style="width:304px;height:auto;">
-	<br>
 	{% if correct == total %}
+	<img src="/static/its-a-match-01.png" alt="It's a match!" style="width:304px;height:auto;"><br>
 		<p>I guess you should hire me, because you got {{ correct }} out of {{ total }}.</p>
 	{% elif correct > 3 %}
-   	 	<p>Hm. You seem weird, because you got {{ correct }} out of {{ total }}.</p>
+	<img src="/static/its-a-match-01not.png" alt="It's not a match!" style="width:304px;height:auto;"><br>
+   	 	<p>Hm. You seem weird, because you got {{ correct }} out of {{ total }}. Try again?</p>
     {% else %}
+    <img src="/static/boowhore.png" alt="Booo, you whore!" style="width:304px;height:auto;"><br>
    	 	<p>Well I don't wanna work with you anyway, because you got {{ correct }} out of {{ total }}.</p>
     {% endif %}
 		<br><br>
