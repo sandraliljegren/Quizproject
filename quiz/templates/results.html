@@ -4,16 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Results</title>
+	<title>Love me Tinder!</title>
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 	<img src="/static/tinder-1.svg" alt="Tinder" style="width:304px;height:auto;">
-	{% if correct == total %}
+	{% if correct > 4 %}
 	<img src="/static/its-a-match-01.png" alt="It's a match!" style="width:304px;height:auto;"><br>
 		<p>I guess you should hire me, because you got {{ correct }} out of {{ total }}.</p>
-	{% elif correct < 2 %}
+	{% elif correct > 2 %}
 	<img src="/static/its-a-match-01not.png" alt="It's not a match!" style="width:304px;height:auto;"><br>
    	 	<p>Hm. You seem weird, because you only got {{ correct }} out of {{ total }} but maybe we could learn to compromise?</p>
     {% else %}
