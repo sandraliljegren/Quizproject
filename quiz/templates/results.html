@@ -16,7 +16,7 @@
 	{% elif correct > 3 %}
 	<img src="/static/its-a-match-01not.png" alt="It's not a match!" style="width:304px;height:auto;"><br>
    	 	<p>Hm. You seem weird, because you got {{ correct }} out of {{ total }} but maybe we could learn to compromise?</p>
-    {% elif correct > 3 %}
+    {% else %}
     <img src="/static/boowhore.png" alt="Booo, you whore!" style="width:304px;height:auto;"><br>
    	 	<p>Well I don't wanna work with you anyway, because you only got {{ correct }} out of {{ total }}.</p>
     {% endif %}
