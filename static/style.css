@@ -7,7 +7,7 @@ body {
 }
 h1 {
 	color: black;
-	font-size: 10pt;
+	font-size: 12pt;
 	text-align: center;
 }
 p {
@@ -37,10 +37,14 @@ form {
 	width:250px;
 }
 button {
-	background: black;
+	background: #df4723;
     color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
     display: inline-block;
-    padding: 10px;
+    border: none;
+    outline:none;
 }
 .container {
 	margin: auto;
@@ -48,4 +52,28 @@ button {
 .answers {
 	display: inline-block;
 	padding: 5px;
+}
+a:link, a:visited {
+    background-color: #df4723;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: lightgray;
+}
+button:link, button:visited {
+    background-color: #df4723;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, button:active {
+    background-color: lightgray;
 }
