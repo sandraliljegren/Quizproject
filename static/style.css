@@ -1,5 +1,5 @@
 body {
-	background-image: /static/gradient.svg;
+	background: url("file://static/gradient.svg") repeat;
 	font-family: Helvetica, sans-serif;
 	width: 100%;
 	margin: auto;
