@@ -39,9 +39,11 @@ def results(request, quiz_number):
 		correct_answer = questions[int(question_number) - 1].correct
 	if correct_answer == answer:
 		num_correct_answers = num_correct_answers + 1
+
+	num_questions = quiz.questions.count()
 	context = {
 	    "correct": num_correct_answers,
-	    "total": questions.count(),
+	    "total": num_questions,
 	}
 	return render(request, "results.html", context)
 
