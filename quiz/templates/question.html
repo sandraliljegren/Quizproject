@@ -13,13 +13,13 @@
 	<h1>{{ question_number }}. {{ question }}</h1>
 	<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
 		{% csrf_token %}
-	<div>
+	<div class="answers">
 		<input type="radio" name="answer" value="1" checked> {{ answer1 }}
 	</div>
-	<div>
+	<div class="answers">
 		<input type="radio" name="answer" value="2"> {{ answer2 }}
 	</div>
-	<div>
+	<div class="answers">
 		<input type="radio" name="answer" value="3"> {{ answer3 }}
 	</div>
 	<br><br>

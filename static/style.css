@@ -45,3 +45,7 @@ button {
 .container {
 	margin: auto;
 }
+.answers {
+	display: inline-block;
+	padding: 5px;
+}
