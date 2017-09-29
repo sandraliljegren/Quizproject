@@ -12,7 +12,14 @@
 	<img src="/static/tinder-1.svg" alt="Tinder" style="width:304px;height:auto;">
 	<img src="/static/its-a-match-01.png" alt="It's a match!" style="width:304px;height:auto;">
 	<br>
-	<p>I guess you should hire me, because you got {{ correct }} out of {{ total }}.</p><br><br>
+	{% if correct == total %}
+		<p>I guess you should hire me, because you got {{ correct }} out of {{ total }}.</p>
+	{% elif correct > 3 %}
+   	 	<p>Hm. You seem weird, because you got {{ correct }} out of {{ total }}.</p>
+    {% else %}
+   	 	<p>Well I don't wanna work with you anyway, because you got {{ correct }} out of {{ total }}.</p>
+    {% endif %}
+		<br><br>
 <p><a href="{% url 'start_page' %}">
 	Do it again!
 </a></p><br>
