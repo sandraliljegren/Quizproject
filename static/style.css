@@ -1,6 +1,6 @@
 body {
 	background-color: white;
-	font-family: Proxima Nova Soft, sans-serif;
+	font-family: Helvetica, sans-serif;
 	width: 100%;
 	margin: auto;
 }
@@ -35,6 +35,7 @@ img {
     margin-top: 40px;
 }
 form {
+	align-content: center;
 	margin: 0 auto; 
 	width:250px;
 }
