@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+	<img src="/static/tinder-icon.svg" alt="Tinder icon" style="width:150px;height:auto;"><br>
 	<h1>{{ question_number }}. {{ question }}</h1>
 	<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
 		{% csrf_token %}
