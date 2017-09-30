@@ -1,3 +1,10 @@
+a {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+}
 body {
 	background-color: white;
 	font-family: Raleway, sans-serif;
@@ -10,6 +17,12 @@ h1 {
 	font-size: 12pt;
 	text-align: center;
 }
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-top: 40px;
+}
 p {
 	color: black;
 	text-align: center;
@@ -19,19 +32,6 @@ p {
 li {
 	color: white;
 	text-align: center;
-}
-a {
-    background: black;
-    color: white;
-    display: inline-block;
-    padding: 10px;
-    width: 150px;
-}
-img {
-    display: block;
-    margin: auto;
-    width: 40%;
-    margin-top: 40px;
 }
 form {
 	margin: 0 auto; 
